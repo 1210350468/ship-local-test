@@ -11,6 +11,7 @@ def median(xs):
     """Return the median of a non-empty sequence."""
     if not xs:
         raise ValueError("median() of empty sequence")
+    xs = sorted(xs)
     n = len(xs)
     mid = n // 2
     if n % 2:
